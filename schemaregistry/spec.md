@@ -281,19 +281,10 @@ of schema documents. An implementation MAY add further attributes.
   - "json-schema"
   - "xsd11"
 
-#### `description` (schema description)
-
-- Type: `String`
-- Description: Explains the purpose of the schema.
-- Constraints:
-  - OPTIONAL
-- Examples:
-  - "This schema describes the toppings for a Pizza."
-
 #### `createdtimeutc` (schema created time)
 
 - Type: `Timestamp`
-- Description: Instant when the schema was added to the registry.
+- Description: Instant when the schema was added to the registry (aka when the first schema version was added).
 - Constraints:
   - OPTIONAL
   - Assigned by the server.
@@ -301,7 +292,7 @@ of schema documents. An implementation MAY add further attributes.
 #### `updatedtimeutc` (schema updated time)
 
 - Type: `Timestamp`
-- Description: Instant when the schema was last updated
+- Description: Instant when the schema was last updated (aka when the latest schema version was added)
 - Constraints:
   - OPTIONAL
   - Assigned by the server.
